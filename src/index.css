@@ -1,0 +1,55 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0); /* Fully transparent track */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5); /* Semi-transparent medium gray */
+  border-radius: 6px;
+  transition: background-color 0.3s ease; /* Adding transition */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.7); /* Darker gray on hover */
+}
+
+/* Adjust font and general body styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F8E0; /* Example off-white background */
+  color: black; /* Assuming dark text */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Additional styles or imports */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles go here */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust scrollbar for mobile */
+  ::-webkit-scrollbar {
+    width: 6px; /* Decrease width for mobile */
+  }
+}
